@@ -1,0 +1,29 @@
+# Visit https://docs.rilldata.com/reference/project-files to learn more about Rill project files.
+
+title: example_dashboard
+model: example_model
+timeseries: Timestamp
+measures:
+  - label: Total records
+    expression: count(*)
+    name: total_records
+    description: Total number of records present
+    format_preset: humanize
+    valid_percent_of_total: true
+dimensions:
+  - name: Message Type
+    label: Message Type
+    column: Message Type
+    description: ""
+available_time_zones:
+  - America/Los_Angeles
+  - America/Chicago
+  - America/New_York
+  - Europe/London
+  - Europe/Paris
+  - Asia/Jerusalem
+  - Europe/Moscow
+  - Asia/Kolkata
+  - Asia/Shanghai
+  - Asia/Tokyo
+  - Australia/Sydney
